@@ -243,7 +243,7 @@ Example: createUsername('Samantha', 'Green') should return 'SamGre12'.
 Complete the exercise in the space below:
 */
 function createUsername(firstName, lastName) {
-    return (firstName[0] + firstName[1] + firstName[2] + lastName[0] + lastName[1] +lastName[2] +(firstName.length +lastName.length))
+    return firstName.substring(0, 3) + lastName.substring(0,3) + (firstName.length+lastName.length)
 }
 
 
