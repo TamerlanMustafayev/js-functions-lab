@@ -49,9 +49,37 @@ should return 'johnsmith@example.com'.
 Complete the exercise in the space below:
 */
 
-function generateEmail(name, domain) {
-    return `${name}@${domain}`
+// function generateEmail(name, domain) {
+//     return `${name}@${domain}`
+// }
+
+
+// console.log('Exercise 4 Result:', generateEmail("blackswan", "gmail.com"));
+
+
+
+
+/*
+Exercise 5: greetUser()
+
+Define a function called greetUser. It should take a name and a 
+time of day (morning, afternoon, evening) and return a personalized 
+greeting.
+
+Example: greetUser('Sam', 'morning') should return "Good morning, Sam!"
+
+Complete the exercise in the space below:
+*/
+function greetUser(name, timeOfDay) {
+    timeOfDay = new Date().getHours()
+    if (timeOfDay >= 0 && timeOfDay < 12) {
+        return `Good morning, ${name}`
+    } else if (timeOfDay >= 12 && timeOfDay < 18) {
+        return `Good afternoon, ${name}`
+    } else {
+        `Good evening, ${name}`
+    }
 }
 
 
-console.log('Exercise 4 Result:', generateEmail("blackswan", "gmail.com"));
+console.log('Exercise 5 Result:', greetUser("Sam", "morning"));
