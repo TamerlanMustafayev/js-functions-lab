@@ -11,19 +11,29 @@ Example: isCharAVowel('a') should return true.
 Complete the exercise in the space below:
 */
 function isCharAVowel(char) {
-    
-    let vowels = ['a', 'e', 'i', 'o', 'u']    
-    for (let i = 0; i < vowels.length; i++) {
-
-        if (char === vowels[i]) {
+        
+    switch (char) {
+        case 'a':
             return true
-            console.log(char)
-        } else {
-            return false
-        }
+            break;
+        case 'e':
+            return true;
+            break;
+        case 'i':
+            return true;
+            break;
+        case 'o':
+            return true;
+            break;
+        case 'u':
+            return true;
+            break;
+        default:
+            console.log('not a vowel!')
+        
     }
 }
 
-console.log('Exercise 3 Result:', isCharAVowel('e'));
+console.log('Exercise 3 Result:', isCharAVowel('o'));
 
 
