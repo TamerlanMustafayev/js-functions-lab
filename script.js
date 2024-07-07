@@ -136,15 +136,54 @@ Example: convertTemperature(32, 'F') should return 0 (Celsius).
 Complete the exercise in the space below:
 */
 
-function convertTemperature(temp, scale) {
-    if (scale === "C") {
-        return `${temp*(9/5)+32}Fahranheit'`
+// function convertTemperature(temp, scale) {
+//     if (scale === "C") {
+//         return `${temp*(9/5)+32}Fahranheit'`
 
-    } else if (scale === "F") {
-        return `${(temp-32)*5/9} Celsius `
+//     } else if (scale === "F") {
+//         return `${(temp-32)*5/9} Celsius `
+//     }
+// }
+
+
+// console.log('Exercise 8 Result:', convertTemperature(85, "F"));
+
+/*
+Exercise 9: basicCalculator()
+
+Create a function named basicCalculator. 
+It should take three arguments: two numbers and a string representing 
+an operation ('add', 'subtract', 'multiply', 'divide'). 
+Perform the provided operation on the two numbers. 
+In operations where the order of numbers is important, 
+treat the first parameter as the first operand and the 
+second parameter as the second operand.
+
+Example: basicCalculator(10, 5, 'subtract') should return 5.
+
+Complete the exercise in the space below:
+*/
+
+function basicCalculator(num1, num2, operation) {
+    switch (operation) {
+        case 'add':
+            return num1 + num2
+            break
+        case 'subtract':
+            return num1 - num2 
+            break
+        case 'multiply': 
+            return num1 * num2
+            break
+        case 'divide':
+            return num1 / num2
+            break
+        default:
+            return 'N/A'
     }
+
 }
 
+console.log('Exercise 9 Result:', basicCalculator(18, 5, "add"));
 
-console.log('Exercise 8 Result:', convertTemperature(85, "F"));
 
