@@ -70,16 +70,34 @@ Example: greetUser('Sam', 'morning') should return "Good morning, Sam!"
 
 Complete the exercise in the space below:
 */
-function greetUser(name, timeOfDay) {
-    timeOfDay = new Date().getHours()
-    if (timeOfDay >= 0 && timeOfDay < 12) {
-        return `Good morning, ${name}`
-    } else if (timeOfDay >= 12 && timeOfDay < 18) {
-        return `Good afternoon, ${name}`
-    } else {
-        `Good evening, ${name}`
-    }
+// function greetUser(name, timeOfDay) {
+//     timeOfDay = new Date().getHours()
+//     if (timeOfDay >= 0 && timeOfDay < 12) {
+//         return `Good morning, ${name}`
+//     } else if (timeOfDay >= 12 && timeOfDay < 18) {
+//         return `Good afternoon, ${name}`
+//     } else {
+//         `Good evening, ${name}`
+//     }
+// }
+
+
+// console.log('Exercise 5 Result:', greetUser("Sam", "morning"));
+
+
+/*
+Exercise 6: maxOfThree()
+
+Define a function, maxOfThree. It should accept three numbers 
+and return the largest among them.
+
+Example: maxOfThree(17, 4, 9) should return 17.
+
+Complete the exercise in the space below:
+*/
+
+function maxOfThree(num1, num2, num3) {
+    return Math.max(num1, num2, num3)
 }
 
-
-console.log('Exercise 5 Result:', greetUser("Sam", "morning"));
+console.log('Exercise 6 Result:', maxOfThree(5, 10, 18));
