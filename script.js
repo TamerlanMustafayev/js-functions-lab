@@ -242,9 +242,27 @@ Example: createUsername('Samantha', 'Green') should return 'SamGre12'.
 
 Complete the exercise in the space below:
 */
-function createUsername(firstName, lastName) {
-    return firstName.substring(0, 3) + lastName.substring(0,3) + (firstName.length+lastName.length)
+// function createUsername(firstName, lastName) {
+//     return firstName.substring(0, 3) + lastName.substring(0,3) + (firstName.length+lastName.length)
+// }
+
+
+
+// console.log('Exercise 11 Result:', createUsername("Samantha", "Green"));
+
+
+/*
+Exercise 12: numArgs()
+
+Challenge yourself with numArgs. 
+This function should return the count of arguments passed to it when called.
+
+Complete the exercise in the space below:
+*/
+
+
+function numArgs(...args) {
+    return args.length
 }
 
-
-console.log('Exercise 11 Result:', createUsername("Samantha", "Green"));
+console.log('Exercise 12 Result:', numArgs(1, 2, 3, 4,5));
