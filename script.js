@@ -1,4 +1,29 @@
 /*
+Exercise 2: isAdult()
+
+Write a function named isAdult. It should take an age (number) 
+and return 'Adult' if the age is 18 or over and 'Minor' otherwise.
+
+Example: isAdult(21) should return 'Adult'.
+
+Complete the exercise in the space below:
+*/
+
+
+function isAdult(age) {
+    if (age >= 18) {
+        return 'Adult'
+    } else {
+        return 'Minor'
+    }
+}
+
+console.log('Exercise 2 Result:', isAdult(15));
+
+
+
+
+/*
 Exercise 3: isCharAVowel()
 
 Write a function named isCharAVowel that takes a single character as 
@@ -10,31 +35,14 @@ Example: isCharAVowel('a') should return true.
 
 Complete the exercise in the space below:
 */
-// function isCharAVowel(char) {
-        
-//     switch (char) {
-//         case 'a':
-//             return true
-//             break;
-//         case 'e':
-//             return true;
-//             break;
-//         case 'i':
-//             return true;
-//             break;
-//         case 'o':
-//             return true;
-//             break;
-//         case 'u':
-//             return true;
-//             break;
-//         default:
-//             console.log('not a vowel!')
-        
-//     }
-// }
+function isCharAVowel(char) {
+    char = char.toLowerCase();
+    
+    return ['a', 'e', 'i', 'o', 'u'].includes(char);
+}
 
-// console.log('Exercise 3 Result:', isCharAVowel('o'));
+
+console.log('Exercise 3 Result:', isCharAVowel('A'));
 
 
 /*
@@ -70,19 +78,19 @@ Example: greetUser('Sam', 'morning') should return "Good morning, Sam!"
 
 Complete the exercise in the space below:
 */
-// function greetUser(name, timeOfDay) {
-//     timeOfDay = new Date().getHours()
-//     if (timeOfDay >= 0 && timeOfDay < 12) {
-//         return `Good morning, ${name}`
-//     } else if (timeOfDay >= 12 && timeOfDay < 18) {
-//         return `Good afternoon, ${name}`
-//     } else {
-//         `Good evening, ${name}`
-//     }
-// }
+function greetUser(name, timeOfDay) {
+    timeOfDay = new Date().getHours()
+    if (timeOfDay >= 0 && timeOfDay < 12) {
+        return `Good morning, ${name}`
+    } else if (timeOfDay >= 12 && timeOfDay < 18) {
+        return `Good afternoon, ${name}`
+    } else {
+        `Good evening, ${name}`
+    }
+}
 
 
-// console.log('Exercise 5 Result:', greetUser("Sam", "morning"));
+console.log('Exercise 5 Result:', greetUser("Sam", "morning"));
 
 
 /*
